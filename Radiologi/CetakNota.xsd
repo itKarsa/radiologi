@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CetakNota" targetNamespace="http://tempuri.org/CetakNota.xsd" xmlns:mstns="http://tempuri.org/CetakNota.xsd" xmlns="http://tempuri.org/CetakNota.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.Radiologi.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.Odbc" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (MySettings)" PropertyReference="ApplicationSettings.Radiologi.My.MySettings.GlobalReference.Default.ConnectionString1" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_datapasienradiologiTableAdapter" GeneratorDataComponentClassName="vw_datapasienradiologiTableAdapter" Name="vw_datapasienradiologi" UserDataComponentName="vw_datapasienradiologiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM `vw_datapasienradiologi`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="noRekamedis" DataSetColumn="noRekamedis" />
+              <Mapping SourceColumn="noDaftar" DataSetColumn="noDaftar" />
+              <Mapping SourceColumn="nmPasien" DataSetColumn="nmPasien" />
+              <Mapping SourceColumn="noRegistrasiRadiologiRajal" DataSetColumn="noRegistrasiRadiologiRajal" />
+              <Mapping SourceColumn="tglMasukRadiologiRajal" DataSetColumn="tglMasukRadiologiRajal" />
+              <Mapping SourceColumn="noTindakanRadiologiRajal" DataSetColumn="noTindakanRadiologiRajal" />
+              <Mapping SourceColumn="kdTarif" DataSetColumn="kdTarif" />
+              <Mapping SourceColumn="tindakan" DataSetColumn="tindakan" />
+              <Mapping SourceColumn="tarif" DataSetColumn="tarif" />
+              <Mapping SourceColumn="tglTindakanRadiologiRajal" DataSetColumn="tglTindakanRadiologiRajal" />
+              <Mapping SourceColumn="statusRadiologi" DataSetColumn="statusRadiologi" />
+              <Mapping SourceColumn="kdTenagaMedisPengirim" DataSetColumn="kdTenagaMedisPengirim" />
+              <Mapping SourceColumn="namapetugasMedis" DataSetColumn="namapetugasMedis" />
+              <Mapping SourceColumn="totalTindakanRadiologiRajal" DataSetColumn="totalTindakanRadiologiRajal" />
+              <Mapping SourceColumn="idTindakanRadiologiRajal" DataSetColumn="idTindakanRadiologiRajal" />
+              <Mapping SourceColumn="kdTenagaMedisPemeriksaan" DataSetColumn="kdTenagaMedisPemeriksaan" />
+              <Mapping SourceColumn="dokterPemeriksa" DataSetColumn="dokterPemeriksa" />
+              <Mapping SourceColumn="tglMulaiLayaniPasien" DataSetColumn="tglMulaiLayaniPasien" />
+              <Mapping SourceColumn="tglSelesaiLayaniPasien" DataSetColumn="tglSelesaiLayaniPasien" />
+              <Mapping SourceColumn="unit" DataSetColumn="unit" />
+              <Mapping SourceColumn="jumlahTindakan" DataSetColumn="jumlahTindakan" />
+              <Mapping SourceColumn="statusTindakan" DataSetColumn="statusTindakan" />
+              <Mapping SourceColumn="totalTarif" DataSetColumn="totalTarif" />
+              <Mapping SourceColumn="carabayar" DataSetColumn="carabayar" />
+              <Mapping SourceColumn="statusPembayaran" DataSetColumn="statusPembayaran" />
+              <Mapping SourceColumn="noRegistrasiRawatJalan" DataSetColumn="noRegistrasiRawatJalan" />
+              <Mapping SourceColumn="unitAsal" DataSetColumn="unitAsal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_pasienradiologidetailTableAdapter" GeneratorDataComponentClassName="vw_pasienradiologidetailTableAdapter" Name="vw_pasienradiologidetail" UserDataComponentName="vw_pasienradiologidetailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM `vw_pasienradiologidetail`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="noTindakanRadiologiRajal" DataSetColumn="noTindakanRadiologiRajal" />
+              <Mapping SourceColumn="kdTarif" DataSetColumn="kdTarif" />
+              <Mapping SourceColumn="tindakan" DataSetColumn="tindakan" />
+              <Mapping SourceColumn="jumlahTindakan" DataSetColumn="jumlahTindakan" />
+              <Mapping SourceColumn="tarif" DataSetColumn="tarif" />
+              <Mapping SourceColumn="totalTarif" DataSetColumn="totalTarif" />
+              <Mapping SourceColumn="PPA" DataSetColumn="PPA" />
+              <Mapping SourceColumn="noDaftar" DataSetColumn="noDaftar" />
+              <Mapping SourceColumn="tglMasukRadiologiRajal" DataSetColumn="tglMasukRadiologiRajal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CetakNota" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CetakNota" msprop:Generator_UserDSName="CetakNota">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_datapasienradiologi" msprop:Generator_TableClassName="vw_datapasienradiologiDataTable" msprop:Generator_TableVarName="tablevw_datapasienradiologi" msprop:Generator_RowChangedName="vw_datapasienradiologiRowChanged" msprop:Generator_TablePropName="vw_datapasienradiologi" msprop:Generator_RowDeletingName="vw_datapasienradiologiRowDeleting" msprop:Generator_RowChangingName="vw_datapasienradiologiRowChanging" msprop:Generator_RowEvHandlerName="vw_datapasienradiologiRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_datapasienradiologiRowDeleted" msprop:Generator_RowClassName="vw_datapasienradiologiRow" msprop:Generator_UserTableName="vw_datapasienradiologi" msprop:Generator_RowEvArgName="vw_datapasienradiologiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="noRekamedis" msprop:Generator_ColumnVarNameInTable="columnnoRekamedis" msprop:Generator_ColumnPropNameInRow="noRekamedis" msprop:Generator_ColumnPropNameInTable="noRekamedisColumn" msprop:Generator_UserColumnName="noRekamedis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="noDaftar" msprop:Generator_ColumnVarNameInTable="columnnoDaftar" msprop:Generator_ColumnPropNameInRow="noDaftar" msprop:Generator_ColumnPropNameInTable="noDaftarColumn" msprop:Generator_UserColumnName="noDaftar">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nmPasien" msprop:Generator_ColumnVarNameInTable="columnnmPasien" msprop:Generator_ColumnPropNameInRow="nmPasien" msprop:Generator_ColumnPropNameInTable="nmPasienColumn" msprop:Generator_UserColumnName="nmPasien" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="noRegistrasiRadiologiRajal" msprop:Generator_ColumnVarNameInTable="columnnoRegistrasiRadiologiRajal" msprop:Generator_ColumnPropNameInRow="noRegistrasiRadiologiRajal" msprop:Generator_ColumnPropNameInTable="noRegistrasiRadiologiRajalColumn" msprop:Generator_UserColumnName="noRegistrasiRadiologiRajal">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tglMasukRadiologiRajal" msprop:Generator_ColumnVarNameInTable="columntglMasukRadiologiRajal" msprop:Generator_ColumnPropNameInRow="tglMasukRadiologiRajal" msprop:Generator_ColumnPropNameInTable="tglMasukRadiologiRajalColumn" msprop:Generator_UserColumnName="tglMasukRadiologiRajal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="noTindakanRadiologiRajal" msprop:Generator_ColumnVarNameInTable="columnnoTindakanRadiologiRajal" msprop:Generator_ColumnPropNameInRow="noTindakanRadiologiRajal" msprop:Generator_ColumnPropNameInTable="noTindakanRadiologiRajalColumn" msprop:Generator_UserColumnName="noTindakanRadiologiRajal">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kdTarif" msprop:Generator_ColumnVarNameInTable="columnkdTarif" msprop:Generator_ColumnPropNameInRow="kdTarif" msprop:Generator_ColumnPropNameInTable="kdTarifColumn" msprop:Generator_UserColumnName="kdTarif" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tindakan" msprop:Generator_ColumnVarNameInTable="columntindakan" msprop:Generator_ColumnPropNameInRow="tindakan" msprop:Generator_ColumnPropNameInTable="tindakanColumn" msprop:Generator_UserColumnName="tindakan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tarif" msprop:Generator_ColumnVarNameInTable="columntarif" msprop:Generator_ColumnPropNameInRow="tarif" msprop:Generator_ColumnPropNameInTable="tarifColumn" msprop:Generator_UserColumnName="tarif" type="xs:double" minOccurs="0" />
+              <xs:element name="tglTindakanRadiologiRajal" msprop:Generator_ColumnVarNameInTable="columntglTindakanRadiologiRajal" msprop:Generator_ColumnPropNameInRow="tglTindakanRadiologiRajal" msprop:Generator_ColumnPropNameInTable="tglTindakanRadiologiRajalColumn" msprop:Generator_UserColumnName="tglTindakanRadiologiRajal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="statusRadiologi" msprop:Generator_ColumnVarNameInTable="columnstatusRadiologi" msprop:Generator_ColumnPropNameInRow="statusRadiologi" msprop:Generator_ColumnPropNameInTable="statusRadiologiColumn" msprop:Generator_UserColumnName="statusRadiologi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kdTenagaMedisPengirim" msprop:Generator_ColumnVarNameInTable="columnkdTenagaMedisPengirim" msprop:Generator_ColumnPropNameInRow="kdTenagaMedisPengirim" msprop:Generator_ColumnPropNameInTable="kdTenagaMedisPengirimColumn" msprop:Generator_UserColumnName="kdTenagaMedisPengirim" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="namapetugasMedis" msprop:Generator_ColumnVarNameInTable="columnnamapetugasMedis" msprop:Generator_ColumnPropNameInRow="namapetugasMedis" msprop:Generator_ColumnPropNameInTable="namapetugasMedisColumn" msprop:Generator_UserColumnName="namapetugasMedis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="totalTindakanRadiologiRajal" msprop:Generator_ColumnVarNameInTable="columntotalTindakanRadiologiRajal" msprop:Generator_ColumnPropNameInRow="totalTindakanRadiologiRajal" msprop:Generator_ColumnPropNameInTable="totalTindakanRadiologiRajalColumn" msprop:Generator_UserColumnName="totalTindakanRadiologiRajal" type="xs:double" minOccurs="0" />
+              <xs:element name="idTindakanRadiologiRajal" msprop:Generator_ColumnVarNameInTable="columnidTindakanRadiologiRajal" msprop:Generator_ColumnPropNameInRow="idTindakanRadiologiRajal" msprop:Generator_ColumnPropNameInTable="idTindakanRadiologiRajalColumn" msprop:Generator_UserColumnName="idTindakanRadiologiRajal" type="xs:int" />
+              <xs:element name="kdTenagaMedisPemeriksaan" msprop:Generator_ColumnVarNameInTable="columnkdTenagaMedisPemeriksaan" msprop:Generator_ColumnPropNameInRow="kdTenagaMedisPemeriksaan" msprop:Generator_ColumnPropNameInTable="kdTenagaMedisPemeriksaanColumn" msprop:Generator_UserColumnName="kdTenagaMedisPemeriksaan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dokterPemeriksa" msprop:Generator_ColumnVarNameInTable="columndokterPemeriksa" msprop:Generator_ColumnPropNameInRow="dokterPemeriksa" msprop:Generator_ColumnPropNameInTable="dokterPemeriksaColumn" msprop:Generator_UserColumnName="dokterPemeriksa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tglMulaiLayaniPasien" msprop:Generator_ColumnVarNameInTable="columntglMulaiLayaniPasien" msprop:Generator_ColumnPropNameInRow="tglMulaiLayaniPasien" msprop:Generator_ColumnPropNameInTable="tglMulaiLayaniPasienColumn" msprop:Generator_UserColumnName="tglMulaiLayaniPasien" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="tglSelesaiLayaniPasien" msprop:Generator_ColumnVarNameInTable="columntglSelesaiLayaniPasien" msprop:Generator_ColumnPropNameInRow="tglSelesaiLayaniPasien" msprop:Generator_ColumnPropNameInTable="tglSelesaiLayaniPasienColumn" msprop:Generator_UserColumnName="tglSelesaiLayaniPasien" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="unit" msprop:Generator_ColumnVarNameInTable="columnunit" msprop:Generator_ColumnPropNameInRow="unit" msprop:Generator_ColumnPropNameInTable="unitColumn" msprop:Generator_UserColumnName="unit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jumlahTindakan" msprop:Generator_ColumnVarNameInTable="columnjumlahTindakan" msprop:Generator_ColumnPropNameInRow="jumlahTindakan" msprop:Generator_ColumnPropNameInTable="jumlahTindakanColumn" msprop:Generator_UserColumnName="jumlahTindakan" type="xs:int" minOccurs="0" />
+              <xs:element name="statusTindakan" msprop:Generator_ColumnVarNameInTable="columnstatusTindakan" msprop:Generator_ColumnPropNameInRow="statusTindakan" msprop:Generator_ColumnPropNameInTable="statusTindakanColumn" msprop:Generator_UserColumnName="statusTindakan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="totalTarif" msprop:Generator_ColumnVarNameInTable="columntotalTarif" msprop:Generator_ColumnPropNameInRow="totalTarif" msprop:Generator_ColumnPropNameInTable="totalTarifColumn" msprop:Generator_UserColumnName="totalTarif" type="xs:double" minOccurs="0" />
+              <xs:element name="carabayar" msprop:Generator_ColumnVarNameInTable="columncarabayar" msprop:Generator_ColumnPropNameInRow="carabayar" msprop:Generator_ColumnPropNameInTable="carabayarColumn" msprop:Generator_UserColumnName="carabayar" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="statusPembayaran" msprop:Generator_ColumnVarNameInTable="columnstatusPembayaran" msprop:Generator_ColumnPropNameInRow="statusPembayaran" msprop:Generator_ColumnPropNameInTable="statusPembayaranColumn" msprop:Generator_UserColumnName="statusPembayaran" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="noRegistrasiRawatJalan" msprop:Generator_ColumnVarNameInTable="columnnoRegistrasiRawatJalan" msprop:Generator_ColumnPropNameInRow="noRegistrasiRawatJalan" msprop:Generator_ColumnPropNameInTable="noRegistrasiRawatJalanColumn" msprop:Generator_UserColumnName="noRegistrasiRawatJalan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unitAsal" msprop:Generator_ColumnVarNameInTable="columnunitAsal" msprop:Generator_ColumnPropNameInRow="unitAsal" msprop:Generator_ColumnPropNameInTable="unitAsalColumn" msprop:Generator_UserColumnName="unitAsal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_pasienradiologidetail" msprop:Generator_TableClassName="vw_pasienradiologidetailDataTable" msprop:Generator_TableVarName="tablevw_pasienradiologidetail" msprop:Generator_TablePropName="vw_pasienradiologidetail" msprop:Generator_RowDeletingName="vw_pasienradiologidetailRowDeleting" msprop:Generator_RowChangingName="vw_pasienradiologidetailRowChanging" msprop:Generator_RowEvHandlerName="vw_pasienradiologidetailRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_pasienradiologidetailRowDeleted" msprop:Generator_UserTableName="vw_pasienradiologidetail" msprop:Generator_RowChangedName="vw_pasienradiologidetailRowChanged" msprop:Generator_RowEvArgName="vw_pasienradiologidetailRowChangeEvent" msprop:Generator_RowClassName="vw_pasienradiologidetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="noTindakanRadiologiRajal" msprop:Generator_ColumnVarNameInTable="columnnoTindakanRadiologiRajal" msprop:Generator_ColumnPropNameInRow="noTindakanRadiologiRajal" msprop:Generator_ColumnPropNameInTable="noTindakanRadiologiRajalColumn" msprop:Generator_UserColumnName="noTindakanRadiologiRajal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kdTarif" msprop:Generator_ColumnVarNameInTable="columnkdTarif" msprop:Generator_ColumnPropNameInRow="kdTarif" msprop:Generator_ColumnPropNameInTable="kdTarifColumn" msprop:Generator_UserColumnName="kdTarif" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tindakan" msprop:Generator_ColumnVarNameInTable="columntindakan" msprop:Generator_ColumnPropNameInRow="tindakan" msprop:Generator_ColumnPropNameInTable="tindakanColumn" msprop:Generator_UserColumnName="tindakan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jumlahTindakan" msprop:Generator_ColumnVarNameInTable="columnjumlahTindakan" msprop:Generator_ColumnPropNameInRow="jumlahTindakan" msprop:Generator_ColumnPropNameInTable="jumlahTindakanColumn" msprop:Generator_UserColumnName="jumlahTindakan" type="xs:int" minOccurs="0" />
+              <xs:element name="tarif" msprop:Generator_ColumnVarNameInTable="columntarif" msprop:Generator_ColumnPropNameInRow="tarif" msprop:Generator_ColumnPropNameInTable="tarifColumn" msprop:Generator_UserColumnName="tarif" type="xs:double" minOccurs="0" />
+              <xs:element name="totalTarif" msprop:Generator_ColumnVarNameInTable="columntotalTarif" msprop:Generator_ColumnPropNameInRow="totalTarif" msprop:Generator_ColumnPropNameInTable="totalTarifColumn" msprop:Generator_UserColumnName="totalTarif" type="xs:double" minOccurs="0" />
+              <xs:element name="PPA" msprop:Generator_ColumnVarNameInTable="columnPPA" msprop:Generator_ColumnPropNameInRow="PPA" msprop:Generator_ColumnPropNameInTable="PPAColumn" msprop:Generator_UserColumnName="PPA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="noDaftar" msprop:Generator_ColumnVarNameInTable="columnnoDaftar" msprop:Generator_ColumnPropNameInRow="noDaftar" msprop:Generator_ColumnPropNameInTable="noDaftarColumn" msprop:Generator_UserColumnName="noDaftar" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tglMasukRadiologiRajal" msprop:Generator_ColumnVarNameInTable="columntglMasukRadiologiRajal" msprop:Generator_ColumnPropNameInRow="tglMasukRadiologiRajal" msprop:Generator_ColumnPropNameInTable="tglMasukRadiologiRajalColumn" msprop:Generator_UserColumnName="tglMasukRadiologiRajal" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

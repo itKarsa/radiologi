@@ -1,0 +1,4 @@
+D:\RSU\Radiologi\Radiologi\bin\Debug\image\laboratorio.png
+D:\RSU\Radiologi\Radiologi\bin\Debug\image\radiology-icon.png
+D:\RSU\Radiologi\Radiologi\bin\Debug\image\x-ray-icon.png
+D:\RSU\Radiologi\Radiologi\bin\Debug\image\x-ray-icon-12.jpg
